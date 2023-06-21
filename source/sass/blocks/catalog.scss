@@ -170,6 +170,10 @@
   padding: 38px 22px 20px 20px;
   border-radius: 4px;
 
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
   @media (min-width: $tablet) {
     padding: 50px 30px 30px 30px;
   }
