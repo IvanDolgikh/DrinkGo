@@ -1,0 +1,79 @@
+.noUi-target {
+  background-color: $light-gray;
+  height: 2px;
+  border: none;
+  border-radius: 0;
+}
+
+.noUi-connect {
+  background-color: $primary-lighter;
+  height: 4px;
+  border: none;
+  border-radius: 0;
+}
+
+.noUi-connects {
+  height: 4px;
+}
+
+.noUi-handle {
+  background: $base-white;
+  border: 2px solid $primary-lighter;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-touch-area:hover,
+.noUi-touch-area:focus {
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  background-color: $primary-opacity;
+  outline: none;
+}
+
+.noUi-touch-area:active {
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  background-color: $base-primary;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  top: -11px;
+  right: -14px;
+}
+
+/* Disabled state*/
+
+[disabled] .noUi-connect {
+  background: $base-grey;
+}
+
+[disabled] .noUi-handle {
+  border-color: $base-grey;
+}
+
+[disabled] .noUi-target,
+[disabled] .noUi-handle {
+  cursor: not-allowed;
+}

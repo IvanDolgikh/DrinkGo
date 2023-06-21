@@ -1,0 +1,72 @@
+
+.swiper__back-button {
+  padding: 0 4px 0 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, $base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0 35px 0 34px;
+    bottom: 22%;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 0;
+  }
+}
+
+.swiper__next-button {
+  padding: 0 5px 0 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $base-white 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0 34px 0 35px;
+    bottom: 22%;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 0;
+  }
+}
+
+.swiper__button-icon {
+  fill: $base-primary;
+}
+
+.swiper__button--disabled {
+  pointer-events: none;
+
+  & > .swiper__button-icon {
+    fill: $base-grey;
+  }
+}

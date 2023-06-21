@@ -1,0 +1,127 @@
+.main-header__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin: 0 auto;
+  background-color: $base-white;
+  max-width: $mobile;
+
+  @media (min-width: $tablet) {
+    padding: 0 20px;
+    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
+    max-width: $desktop;
+  }
+}
+
+.main-header__logo {
+  margin: auto 0;
+}
+
+.main-header__nav {
+  grid-column: 1 / 4;
+
+  @media (min-width: $tablet) {
+    grid-column: 2;
+  }
+}
+
+.main-header__list {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.main-header__item:not(:nth-last-child(-n+2)) {
+  @media (min-width: $desktop) {
+    margin-right: 20px;
+  }
+}
+
+.main-header__item-link {
+  display: block;
+  padding: 22px;
+
+  @media (min-width: $tablet) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    text-decoration: none;
+    padding: 32px 20px;
+  }
+}
+
+.main-header__item-link:hover .main-header__item-text,
+.main-header__item-link:focus .main-header__item-text {
+  color: $base-primary;
+}
+
+.main-header__item-link:hover .main-header__item-image,
+.main-header__item-link:focus .main-header__item-image {
+  fill: $base-primary;
+}
+
+.main-header__item-link:active {
+  background-color: $base-secondary;
+}
+
+.main-header__item-text {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $base-black;
+  }
+}
+
+.main-header__item-button-open {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 30px 30px;
+  background-image: url("../../img/icons/stack.svg#burger-menu");
+  background-size: 16px 12px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-header__item-button-close {
+  background-image: url("../../img/icons/stack.svg#close-menu");
+  background-size: 12px 12px;
+
+  &:active {
+    background-color: $base-secondary;
+  }
+}
+
+.main-header__item-button-open--nojs {
+  display: none;
+}
+
+.main-header__item-image {
+  display: block;
+  fill: $base-black;
+
+  @media (min-width: $desktop) {
+    margin-right: 8px;
+  }
+}

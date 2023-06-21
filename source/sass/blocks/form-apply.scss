@@ -1,0 +1,79 @@
+.form-apply__button-apply {
+  display: block;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-white;
+  width: 100%;
+  padding: 8px 20px;
+  background: $base-primary;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.form-apply__button-reset {
+  display: block;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-primary;
+  width: 100%;
+  padding: 8px 20px;
+  background: $base-white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $light-gray;
+    color: $base-white;
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+}

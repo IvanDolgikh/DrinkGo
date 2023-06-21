@@ -1,0 +1,83 @@
+.form-availability__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-availability__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-availability__label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-availability__mark {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $base-grey;
+  border-radius: 50%;
+}
+
+.form-availability__title {
+  margin-left: 34px;
+}
+
+.form-availability__parameter:hover + .form-availability__mark,
+.form-availability__parameter:focus + .form-availability__mark,
+.form-availability__parameter:checked + .form-availability__mark {
+  border-color: $base-primary;
+}
+
+.form-availability__mark::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  width: 16px;
+  height: 16px;
+  background-color: $primary-opacity;
+  border-radius: 50%;
+}
+
+
+.form-availability__parameter:hover + .form-availability__mark::after,
+.form-availability__parameter:focus + .form-availability__mark::after {
+  content: "";
+}
+
+.form-availability__parameter:checked + .form-availability__mark::after {
+  content: "";
+  background-color: $base-primary;
+}
+
+.form-availability__parameter:not(:checked):disabled + .form-availability__mark {
+  border: 2px solid $light-gray;
+}
+
+.form-availability__parameter:checked:disabled + .form-availability__mark {
+  border: 2px solid $light-gray;
+
+  &::after {
+    background-color: $light-gray;
+  }
+}
+
+.form-availability__parameter:disabled ~ .form-availability__title {
+  color: $base-grey;
+}

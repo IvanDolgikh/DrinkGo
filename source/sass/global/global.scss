@@ -1,0 +1,27 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: $montserrat;
+  background-color: $base-white;
+}
+
+main {
+  flex: auto;
+}
+
+footer {
+  flex-shrink: 0;
+}

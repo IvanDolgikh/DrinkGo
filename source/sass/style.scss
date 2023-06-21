@@ -1,0 +1,38 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+
+/* BLOCKS */
+@import "blocks/visually-hidden";
+@import "blocks/reset-list";
+@import "blocks/main-nav";
+@import "blocks/logo";
+@import "blocks/main-header";
+@import "blocks/advantages";
+@import "blocks/catalog";
+@import "blocks/form-filter";
+@import "blocks/form-price";
+@import "blocks/form-availability";
+@import "blocks/form-manufacturer";
+@import "blocks/form-apply";
+@import "blocks/product-item";
+@import "blocks/pagination";
+@import "blocks/map.scss";
+@import "blocks/main-footer";
+@import "blocks/social";
+@import "blocks/footer-navigation";
+@import "blocks/additional-information";
+@import "blocks/contacts";
+
+/* nouislider */
+@import "nouislider/nouislider";
+
+/* leaflet */
+@import "leaflet/leaflet";
+
+/* swiper */
+@import "swiper/swiper";
+@import "swiper/swiper-wrapper";
+@import "swiper/swiper-slide";
+@import "swiper/swiper-pagination";

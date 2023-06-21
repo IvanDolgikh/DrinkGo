@@ -1,0 +1,70 @@
+.form-price__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+}
+
+.form-price__slider-container {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.form-price__slider {
+  width: calc(100% - 17px);
+  margin: 0 auto;
+}
+
+.form-price__slider:disabled {
+  background-color: $light-gray;
+}
+
+.form-price__values-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-price__values {
+  display: block;
+  background: $base-white;
+  border: 2px solid $primary-lighter;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  border-radius: 4px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 6px 10px;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $primary-darker;
+  }
+
+  &:disabled {
+    border: 2px solid $light-gray;
+  }
+}
+
+.form-price__separator {
+  display: block;
+  height: 2px;
+  min-width: 8px;
+  background-color: $base-grey;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.form-price__values::placeholder {
+  color: $base-grey;
+}

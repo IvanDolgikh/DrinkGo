@@ -1,0 +1,93 @@
+.product-item {
+  background-color: $base-white;
+}
+
+.product-item__link-image {
+  display: block;
+  align-self: center;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.product-item__image {
+  display: block;
+}
+
+.product-item__link-name {
+  display: block;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $base-black;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+.product-item__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-black;
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.product-item__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item__price {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $base-black;
+}
+
+.product-item__button-choose {
+  display: block;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-white;
+  border: none;
+  background-color: $base-primary;
+  background-image: url("../../img/icons/stack.svg#order-basket");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 20px;
+  border-radius: 4px;
+  padding: 8px 20px 8px 46px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}

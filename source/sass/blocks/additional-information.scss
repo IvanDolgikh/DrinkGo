@@ -1,0 +1,42 @@
+.additional-information__container {
+  padding: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.additional-information__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $base-primary;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.additional-information__item-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $base-black;
+  padding: 8px 0;
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.additional-information__item:not(:last-child) {
+  margin-bottom: 4px;
+}

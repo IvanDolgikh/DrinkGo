@@ -1,0 +1,30 @@
+.range__scale {
+  width: 100%;
+  background-color: $light-gray;
+  height: 2px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.range__bar {
+  width: 240px;
+  background-color: $primary-lighter;
+  height: 4px;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: $base-white;
+  border: 2px solid $primary-lighter;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__toggle:last-child {
+  position: absolute;
+  left: 235px;
+}

@@ -1,0 +1,96 @@
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+  }
+}
+
+.pagination__item:not(:last-child) {
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+  }
+}
+
+.pagination__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $montserrat;
+  width: 40px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-primary;
+  background-color: $base-white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-lighter;
+    color: $base-white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $light-gray;
+    color: $base-white;
+  }
+}
+
+.pagination__button-icon {
+  fill: $base-primary;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.pagination__button:hover > .pagination__button-icon,
+.pagination__button:focus > .pagination__button-icon,
+.pagination__button:disabled > .pagination__button-icon {
+  fill: $base-white;
+}
+
+.pagination__button--current {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-black;
+  background-color: transparent;
+}
+
+.pagination__item:last-child .pagination__button {
+  @media (min-width: $tablet) {
+    width: 104px;
+
+    &::before {
+      content: "Вперед";
+    }
+  }
+}
+
+.pagination__item:first-child .pagination__button {
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet) {
+    transform: none;
+    width: 91px;
+
+    &::before {
+      content: "Назад";
+    }
+  }
+}
