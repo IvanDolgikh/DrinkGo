@@ -1,0 +1,1 @@
+const swiper=new Swiper(".swiper",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper__next-button",prevEl:".swiper__back-button",disabledClass:".swiper__button--disabled"},scrollbar:{el:".swiper-scrollbar"}});
